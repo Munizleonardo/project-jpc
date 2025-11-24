@@ -1,0 +1,65 @@
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Shield } from "lucide-react";
+import { Button } from "@/app/_components/ui/button";
+import Image from "next/image";
+
+export function Header() {
+  const pathname = usePathname();
+  const isActive = (path: string) => pathname === path;
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-soft">
+      <div className="container mx-auto px-4">
+        <nav className="flex items-center justify-between h-20">
+          <Link href="/" className="flex items-center gap-3 group">
+
+            <Image 
+            src="/logo.png" 
+            alt="JPC RIO Certificadora Digital" 
+            width={80} 
+            height={80} 
+            />
+            {/*<Shield className="w-10 h-10 text-primary transition-transform group-hover:scale-110" />
+            <div className="flex flex-col">
+              <span className="text-2xl font-bold text-foreground tracking-tight">JPC RIO</span>
+              <span className="text-xs text-muted-foreground">Certificadora Digital</span>
+            </div>*/}
+          </Link>
+
+          <div className="hidden md:flex items-center gap-2">
+            <Button
+              asChild
+              variant={isActive("/") ? "default" : "ghost"}
+              className="text-base"
+            >
+              <Link href="/">Início</Link>
+            </Button>
+            <Button
+              asChild
+              variant={isActive("/#sobre") ? "default" : "ghost"}
+              className="text-base hover:bg-primary/70 hover:text-white"
+            >
+              <a href="#sobre">Sobre</a>
+            </Button>
+            <Button
+              asChild
+              variant={isActive("/#certificados") ? "default" : "ghost"}
+              className="text-base hover:bg-primary/70 hover:text-white"
+            >
+              <a href="#certificados">Certificados</a>
+            </Button>
+            <Button
+              asChild
+              variant={isActive("/#contato") ? "default" : "ghost"}
+              className="text-base hover:bg-primary/70 hover:text-white"
+            >
+              <a href="#contato">Contato</a>
+            </Button>
+          </div>
+        </nav>
+      </div>
+    </header>
+  );
+};
