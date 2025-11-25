@@ -3,10 +3,23 @@ import { Button } from "./ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="relative pt-32 pb-20 px-4 overflow-hidden bg-gradient-to-br from-primary via-primary to-primary/60">
-      <div className="absolute inset-0 bg-grid-white/[0.05] bg-[size:60px_60px]" />
-      
-      <div className="container mx-auto relative z-10">
+    <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+        {/* Vídeo de fundo */}
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/banner.mp4" type="video/mp4" />
+        </video>
+
+        {/* Overlay (opcional para escurecer / dar contraste) */}
+        <div className="absolute inset-0 bg-primary/70" />
+
+        {/* Conteúdo */}
+        <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-accent/10 backdrop-blur-sm border border-accent/20 rounded-full px-6 py-3 mb-8">
             <Shield className="w-5 h-5 text-white" />
@@ -17,7 +30,7 @@ export default function HeroSection() {
 
           <h1 className="text-4xl md:text-6xl font-bold text-primary-foreground mb-6 leading-tight">
             Seu Certificado Digital com
-            <span className="block mt-2 bg-gradient-to-r from-accent to-accent-white bg-clip-text text-transparent/50">
+            <span className="block mt-2 bg-gradient-to-r from-accent to-accent-white bg-clip-text">
               Segurança e Agilidade
             </span>
           </h1>
