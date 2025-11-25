@@ -61,8 +61,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">Horário</h4>
                   <p className="text-muted-foreground">
-                    Segunda a Sexta: 9h às 18h<br />
-                    Sábado: 9h às 13h
+                    Segunda a Sexta: 9h às 18h
                   </p>
                 </div>
               </div>
