@@ -53,7 +53,7 @@ export function Footer() {
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span className="text-sm opacity-90">São Cristóvão, Rio de Janeiro - RJ</span>
+                <span className="text-sm opacity-90">R. Ricardo Machado, 28 - São Cristóvão, Rio de Janeiro - RJ</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5 flex-shrink-0" />
