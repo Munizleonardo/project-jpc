@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Shield, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
+import LogoParks from "./_components/LogoParks";
 
 export function Footer() {
   return (
@@ -80,6 +81,12 @@ export function Footer() {
             © 2025 JPC RIO Certificadora Digital – Todos os direitos reservados.
           </p>
         </div>
+        <div className="flex items-center justify-center space-x-2">
+          <p className="text-sm opacity/90">Desenvolvido por</p>
+          <Link href="https://parkscompany.com.br" target="_blank">
+            <LogoParks />
+          </Link>
+        </div>
       </div>
     </footer>
   );
