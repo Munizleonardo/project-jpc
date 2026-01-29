@@ -4,7 +4,6 @@ import { Button } from "./ui/button";
 export default function HeroSection() {
   return (
     <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        {/* Vídeo de fundo */}
         <video
           className="absolute inset-0 w-full h-full object-cover"
           autoPlay
@@ -15,10 +14,8 @@ export default function HeroSection() {
           <source src="/banner.mp4" type="video/mp4" />
         </video>
 
-        {/* Overlay (opcional para escurecer / dar contraste) */}
         <div className="absolute inset-0 bg-primary/70" />
 
-        {/* Conteúdo */}
         <div className="container mx-auto relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center gap-2 bg-accent/10 backdrop-blur-sm border border-accent/20 rounded-full px-6 py-3 mb-8">
@@ -45,7 +42,7 @@ export default function HeroSection() {
               <a href="#certificados">Ver Certificados</a>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-lg text-white px-8 bg-primary-foreground/10 hover:bg-primary-foreground/20 hover:text-white border-primary-foreground/30">
-              <a href="#contato">Fale Conosco</a>
+              <a href="https://wa.me/+5521964274957?Ola-vim-do-site" target="_blank">Fale Conosco</a>
             </Button>
           </div>
 

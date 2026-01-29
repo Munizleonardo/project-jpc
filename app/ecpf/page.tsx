@@ -92,7 +92,7 @@ export default function Ecpf() {
                   <ul className="space-y-3">
                     {product.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-sm">
-                        <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                        <Check className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                         <span className="text-muted-foreground">{feature}</span>
                       </li>
                     ))}
@@ -105,7 +105,7 @@ export default function Ecpf() {
                     variant={product.popular ? "default" : "outline"}
                   >
                     <ShoppingCart className="w-4 h-4 mr-2" />
-                    <Link href="/" target="_blank">
+                    <Link href="https://wa.me/+5521964274957?Ola-vim-do-site" target="_blank">
                       Comprar Agora
                     </Link>  
                   </Button>

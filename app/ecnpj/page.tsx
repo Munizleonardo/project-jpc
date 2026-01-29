@@ -105,7 +105,7 @@ export default function Ecnpj() {
                     variant={product.popular ? "default" : "outline"}
                   >
                     <ShoppingCart className="w-4 h-4 mr-2" />
-                    <Link href="/" target="_blank">
+                    <Link href="https://wa.me/+5521964274957?Ola-vim-do-site" target="_blank">
                       Comprar Agora
                     </Link>
                   </Button>

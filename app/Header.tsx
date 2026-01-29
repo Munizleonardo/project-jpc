@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Shield } from "lucide-react";
 import { Button } from "@/app/_components/ui/button";
 import Image from "next/image";
 
@@ -21,11 +20,6 @@ export function Header() {
             width={80} 
             height={80} 
             />
-            {/*<Shield className="w-10 h-10 text-primary transition-transform group-hover:scale-110" />
-            <div className="flex flex-col">
-              <span className="text-2xl font-bold text-foreground tracking-tight">JPC RIO</span>
-              <span className="text-xs text-muted-foreground">Certificadora Digital</span>
-            </div>*/}
           </Link>
 
           <div className="hidden md:flex items-center gap-2">

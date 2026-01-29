@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Shield, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram } from "lucide-react";
 import Image from "next/image";
 import LogoParks from "./_components/LogoParks";
 
@@ -17,7 +17,6 @@ export function Footer() {
               height={80}
               />
 
-              {/*<Shield className="w-10 h-10" />*/}
               <div className="flex flex-col">
                 <span className="text-2xl font-bold">JPC RIO</span>
                 <span className="text-sm opacity-90">Certificadora Digital</span>
@@ -53,25 +52,26 @@ export function Footer() {
             <h3 className="text-lg font-semibold">Contato</h3>
             <div className="flex flex-col gap-3">
               <div className="flex items-start gap-2">
-                <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-5 h-5 mt-0.5 shrink-0" />
                 <span className="text-sm opacity-90">R. Ricardo Machado, 28 - São Cristóvão, Rio de Janeiro - RJ</span>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="w-5 h-5 flex-shrink-0" />
+                <Phone className="w-5 h-5 shrink-0" />
                 <span className="text-sm opacity-90">(21) 96427-4957</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-5 h-5 flex-shrink-0" />
+                <Mail className="w-5 h-5 shrink-0" />
                 <span className="text-sm opacity-90">contato@jpcrio.com.br</span>
               </div>
-            </div>
-            <div className="flex gap-4 mt-2">
-              <a 
-              href="https://www.instagram.com/jpcriocertificadoradigital/" 
-              className="hover:opacity-80 transition-opacity" 
-              aria-label="Instagram">
-                <Instagram className="w-6 h-6" />
-              </a>
+              <div className="flex">
+                <Link 
+                href="https://www.instagram.com/jpcriocertificadoradigital/" 
+                className="hover:opacity-80 flex gap-2 transition-opacity" 
+                aria-label="Instagram">
+                  <Instagram className="w-5 h-5 shrink-0" />
+                  <span className="text-sm flex opacity-90">@jpcriocertificadoradigital</span>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -86,7 +86,7 @@ export function Footer() {
           <Link href="https://parkscompany.com.br" target="_blank">
             <LogoParks />
           </Link>
-        </div>
+        </div>
       </div>
     </footer>
   );
