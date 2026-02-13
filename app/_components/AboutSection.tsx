@@ -33,7 +33,7 @@ export default function AboutSection() {
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Localizada em São Cristóvão, no Rio de Janeiro, a JPC RIO é especializada em emissão 
+            Localizada no Centro do Rio de Janeiro, a JPC RIO é especializada em emissão 
             de Certificados Digitais, oferecendo profissionalismo, agilidade e atendimento humanizado 
             para pessoas físicas e jurídicas.
           </p>
