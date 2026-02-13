@@ -28,8 +28,8 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">Endereço</h4>
                   <p className="text-muted-foreground">
-                    Rua Ricardo Machado nº28<br/>
-                    São Cristóvão - Rio de Janeiro - RJ
+                    Rua São José nº46 - Sala 1101<br/>
+                    Centro - Rio de Janeiro - RJ
                   </p>
                 </div>
               </div>
