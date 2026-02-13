@@ -34,7 +34,7 @@ export default function HeroSection() {
 
           <p className="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed">
             Emissão de certificados digitais e-CPF e e-CNPJ com atendimento profissional
-            em São Cristóvão, Rio de Janeiro.
+            no Centro, Rio de Janeiro.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
